@@ -1,0 +1,36 @@
+<form>
+
+  <div class="col-6">
+    <div class="mb-3">
+      <div class="form-group pt-4">
+        <label for="num1" class="form-label">Numero 1</label>
+        <input type="text" class="form-control" id="num1" [(ngModel)]="num1" name="num1">
+
+      </div>
+      <div class="form-group pt-4">
+        <label for="num2" class="form-label">Numero 2</label>
+        <input type="text" class="form-control" id="num2" [(ngModel)]="num2" name="num2">
+
+      </div>
+      <div class="form-group">
+        <button class="btn btn-primary mt-3" (click)="calculos()">Calcular</button><br>
+
+
+
+        <input type="radio" id="suma" name="calcu" value="Suma" [(ngModel)]="opera">
+        <label for="suma">Sumar</label><br>
+        <input type="radio" id="resta" name="calcu" value="Resta" [(ngModel)]="opera">
+        <label for="resta">Resta</label><br>
+        <input type="radio" id="Multiplicar" name="calcu" value="Multiplicar" [(ngModel)]="opera">
+        <label for="Multiplicar">Multiplicar</label><br>
+        <input type="radio" id="Dividir" name="calcu" value="Dividir" [(ngModel)]="opera">
+        <label for="Dividir">Dividir</label>
+
+
+
+      </div>
+    </div>
+  </div>
+  <div class="col-6"></div>
+  <h1>Resultado: {{res}}</h1>
+</form>
