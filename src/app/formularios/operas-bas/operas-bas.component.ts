@@ -13,6 +13,10 @@ num2:string="";
 res:string="";
 opera:string="";
 
+
+
+
+
 sumar():void{
   this.res = (parseInt(this.num1) + parseInt(this.num2)).toString();
 

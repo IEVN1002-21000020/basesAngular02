@@ -1,1 +1,34 @@
-<p>cinepolis works!</p>
+<div class="fondito">
+
+<form>
+  <h2>Entradas</h2>
+
+  <div>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" [(ngModel)]="nombre" name="nombre"><br><br>
+
+    <label for="cantComp">Cantidad de Compradores:</label>
+    <input type="number" id="cantComp" [(ngModel)]="cantComp" name="cantComp"><br><br>
+
+    <label>Tarjeta Cineco:</label>
+    <input type="radio" id="tarjetaSi" [(ngModel)]="tarjeta" name="tarjeta" value="si">
+    <label for="tarjetaSi">Sí</label>
+    <input type="radio" id="tarjetaNo" [(ngModel)]="tarjeta" name="tarjeta" value="no">
+    <label for="tarjetaNo">No</label><br><br>
+
+    <label for="cantBoletos">Cantidad de Boletos:</label>
+    <input type="number" id="cantBoletos" [(ngModel)]="cantBoletos" name="cantBoletos"><br><br>
+  </div>
+  </form>
+
+  <form>
+  <h2>Acciones</h2>
+  <button type="button" (click)="calcularTotal()">Calcular</button>
+  <button type="button">Salir</button>
+  </form>
+
+  <form>
+  <h2>Salidas</h2>
+  <label>Valor a pagar: {{res}}</label>
+</form>
+</div>
